@@ -1,3 +1,4 @@
+#multi-sample haplotyper
 java -jar -Xms100g -Xmx100g /usr/local/GATK-3.4-0/GenomeAnalysisTK.jar -T HaplotypeCaller \
 -R /home/ecrowgey/GATKbundle/ucsc.hg19.fasta \
 -I 001a1_bwa_mem_sorted_mdup1_realigned_mdup2_recal.bam \
@@ -11,3 +12,4 @@ java -jar -Xms100g -Xmx100g /usr/local/GATK-3.4-0/GenomeAnalysisTK.jar -T Haplot
 -I 061e7_bwa_mem_sorted_mdup1_realigned_mdup2_recal.bam \
 -I 062e8_bwa_mem_sorted_mdup1_realigned_mdup2_recal.bam \
 -o haplotyper-all.vcf
+
