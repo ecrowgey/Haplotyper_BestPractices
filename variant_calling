@@ -1,0 +1,13 @@
+java -jar -Xms100g -Xmx100g /usr/local/GATK-3.4-0/GenomeAnalysisTK.jar -T HaplotypeCaller \
+-R /home/ecrowgey/GATKbundle/ucsc.hg19.fasta \
+-I 001a1_bwa_mem_sorted_mdup1_realigned_mdup2_recal.bam \
+-I 002b1_bwa_mem_sorted_mdup1_realigned_mdup2_recal.bam \
+-I 003a1_bwa_mem_sorted_mdup1_realigned_mdup2_recal.bam \
+-I 056e2_bwa_mem_sorted_mdup1_realigned_mdup2_recal.bam \
+-I 057e3_bwa_mem_sorted_mdup1_realigned_mdup2_recal.bam \
+-I 058e4_bwa_mem_sorted_mdup1_realigned_mdup2_recal.bam \
+-I 059e5_bwa_mem_sorted_mdup1_realigned_mdup2_recal.bam \
+-I 060e6_bwa_mem_sorted_mdup1_realigned_mdup2_recal.bam \
+-I 061e7_bwa_mem_sorted_mdup1_realigned_mdup2_recal.bam \
+-I 062e8_bwa_mem_sorted_mdup1_realigned_mdup2_recal.bam \
+-o haplotyper-all.vcf
